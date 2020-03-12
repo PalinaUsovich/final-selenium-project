@@ -15,6 +15,8 @@ public class HomePage extends BasePage{
 	private By femaleGender = By.id("u_0_9");
 	private By maleGender = By.id("u_0_a");
 	private By messengerLink = By.id("");
+	private By darkSkySignUpButton = By.xpath("//a[@class='button filled']");
+
 	
 	public void clickOnLoginButton() {
 		clickOn(loginButton);
@@ -66,6 +68,9 @@ public class HomePage extends BasePage{
 
 	public void clickOnMessengerLink() {
 		clickOn(messengerLink);
+	}
+	public void clickOnDarkSkySighUpButton(){
+		clickOn(darkSkySignUpButton);
 	}
 
 

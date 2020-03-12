@@ -26,6 +26,10 @@ Feature: Login feature
     And I click on login button on home screen
     Then I verify that i am an invalid login page
 
+
+
+
+
     Examples:
       | username                      | password |
       | mohammad@technosoftacademy.io | test1234 |

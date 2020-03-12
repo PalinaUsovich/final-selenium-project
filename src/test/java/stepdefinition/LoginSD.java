@@ -46,7 +46,7 @@ public class LoginSD {
         }
     }
 
-    @When("^I click on (login|create account) button on home screen$")
+    @Then("^I click on (login|create account) button on home screen$")
     public void clickOnLoginButton(String button) {
 
         switch (button) {
