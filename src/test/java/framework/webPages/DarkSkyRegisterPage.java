@@ -6,14 +6,17 @@ import org.testng.Assert;
 
 public class DarkSkyRegisterPage extends BasePage{
 
-    private By darkSkyRegisterButton = By.xpath(" //button[contains(text(),'Register')]");
-    private By darkSkyRegisterHeader = By.xpath("//h1[@class='stand-alone title']");
+    private By darkSkyRegisterHeader = By.xpath("//h1[text()='Register']");
+    private By registerButton = By.xpath("//button[contains(text(),'Register')");
 
-    public void clickOnDarkSkyRegisterButton(){
-        clickOn(darkSkyRegisterButton);
-    }
     public String getPageHeader() {
         return getTextFromElement(darkSkyRegisterHeader);
+    }
+    public void clickOnRegisterButton() {
+        clickOn(registerButton);
+    }
+    public boolean isRegisterHeaderDisplayed(){
+        return isElementDisplayed(darkSkyRegisterHeader);
     }
 
     }
