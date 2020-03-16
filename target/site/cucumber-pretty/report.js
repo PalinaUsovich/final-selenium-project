@@ -1,20 +1,42 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("darkSkyRegister.feature");
 formatter.feature({
-  "line": 1,
+  "line": 4,
   "name": "DarkSkyRegister feature",
   "description": "",
   "id": "darkskyregister-feature",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@web"
+    }
+  ]
+});
+formatter.before({
+  "duration": 5633724233,
+  "status": "passed"
 });
 formatter.background({
-  "line": 3,
-  "name": "I am on dark sky page",
+  "line": 6,
+  "name": "",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
-formatter.scenario({
+formatter.step({
   "line": 7,
+  "name": "I am on the DarkSky Register page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "DarkSkySD.iAmOnDarkSkyHomePage()"
+});
+formatter.result({
+  "duration": 4914039632,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 12,
   "name": "Verify invalid signup error message",
   "description": "",
   "id": "darkskyregister-feature;verify-invalid-signup-error-message",
@@ -22,44 +44,49 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 6,
+      "line": 11,
       "name": "@Register-1"
     }
   ]
 });
 formatter.step({
-  "line": 8,
-  "name": "I am on darksky Register Page",
+  "line": 13,
+  "name": "I click on sign Up button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
+  "line": 14,
   "name": "I click on register button",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 15,
   "name": "I verify I am on register page by asserting Register header",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DarkSkySD.iAmOnDarkSkyHomePage()"
+  "location": "DarkSkySD.iClickOnSignUpButton()"
 });
 formatter.result({
-  "duration": 340293986,
-  "error_message": "java.lang.NullPointerException\n\tat java.util.Objects.requireNonNull(Objects.java:203)\n\tat org.openqa.selenium.support.ui.FluentWait.\u003cinit\u003e(FluentWait.java:115)\n\tat org.openqa.selenium.support.ui.FluentWait.\u003cinit\u003e(FluentWait.java:106)\n\tat org.openqa.selenium.support.ui.FluentWait.\u003cinit\u003e(FluentWait.java:96)\n\tat framework.webPages.BasePage.webAction(BasePage.java:20)\n\tat framework.webPages.BasePage.setValue(BasePage.java:43)\n\tat framework.webPages.DarkSkyHomePage.enterAddress(DarkSkyHomePage.java:10)\n\tat stepdefinition.DarkSkySD.iAmOnDarkSkyHomePage(DarkSkySD.java:17)\n\tat ✽.When I am on darksky Register Page(darkSkyRegister.feature:8)\n",
-  "status": "failed"
+  "duration": 2150497312,
+  "status": "passed"
 });
 formatter.match({
   "location": "DarkSkySD.clickOnRegisterButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2073802594,
+  "status": "passed"
 });
 formatter.match({
   "location": "DarkSkySD.verifyRegisterHeader()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 110189123,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 151835141,
+  "status": "passed"
 });
 });

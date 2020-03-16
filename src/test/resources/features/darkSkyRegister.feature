@@ -1,11 +1,16 @@
+  @web
+
+
 Feature: DarkSkyRegister feature
 
-  Background: I am on dark sky page
+  Background:
+  Given I am on the DarkSky Register page
+
 
 
      @Register-1
       Scenario: Verify invalid signup error message
-       When I am on darksky Register Page
-       Then I click on register button
+       When I click on sign Up button
+       And I click on register button
        Then I verify I am on register page by asserting Register header
 

@@ -12,16 +12,24 @@ public class DarkSkySD {
     private DarkSkyRegisterPage darkSkyRegisterPage = new DarkSkyRegisterPage();
     private DarkSkyAPIPage darkSkyAPIPage = new DarkSkyAPIPage();
 
-    @Given("^I am on darksky Register Page$")
-    public void iAmOnDarkSkyHomePage() {
+    @Given("^I am on the DarkSky Register page$")
+    public void iAmOnDarkSkyHomePage() throws InterruptedException {
        // darkSkyHomepage.enterAddress("New York");
+         Thread.sleep(2000);
         darkSkyHomepage.clickOnDarkSkyButton();
+        Thread.sleep(2000);
+       // Assert.assert
+    }
+    @When ("^I click on sign Up button$")
+    public void iClickOnSignUpButton () throws InterruptedException {
+        Thread.sleep(2000);
         darkSkyAPIPage.clickOnSignUpButton();
-        Assert.assertTrue(darkSkyRegisterPage.isRegisterHeaderDisplayed());
     }
 
+
     @When("^I click on register button$")
-    public void clickOnRegisterButton() {
+    public void clickOnRegisterButton() throws InterruptedException {
+        Thread.sleep(2000);
         darkSkyRegisterPage.clickOnRegisterButton();
     }
 

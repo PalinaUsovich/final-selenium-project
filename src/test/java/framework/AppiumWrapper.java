@@ -26,7 +26,7 @@ public class AppiumWrapper {
         appiumDriver = buildAppiumDriver();
 
         // This is used in cases where fluent wait is not applied (fluentWait() at BaseWebPage class)
-        appiumDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        appiumDriver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
     }
 
 
