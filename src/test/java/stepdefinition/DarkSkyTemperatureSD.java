@@ -18,6 +18,8 @@ public class DarkSkyTemperatureSD {
     @Then("^I verify current temp is not greater or less then temps from daily timeline$")
     public void iVerifyCurrentTempIsNotGreaterOrLessThenTempsFromDailyTimeline(){
 
+
+
     }
     //#3
     @When("^I expand todays timeline$")
