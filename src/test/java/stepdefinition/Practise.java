@@ -39,25 +39,9 @@ public class Practise {
         // 22° will become 22
         //then I'll "22" into int-22'
         //6.find max number in given array
-        public static int getMaxValue(int[] max) {
-            int maxValue = max[0];
-            for (int i = 1; i < max.length; i++) {
-                if (max[i] > maxValue) {
-                    maxValue = max[i];
-                }
-            }
-            return maxValue;
-        }
+
 
         //7.find the min value in given array
-        public static int getMinValue(int[] min) {
-            int minValue = min[0];
-            for (int i = 1; i < min.length; i++) {
-                if (min[i] < minValue) {
-                    minValue = min[i];
-
-                }
-            }
 
 
     }
