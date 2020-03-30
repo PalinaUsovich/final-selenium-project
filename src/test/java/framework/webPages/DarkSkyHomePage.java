@@ -8,7 +8,7 @@ import stepdefinition.SharedSD;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import util.DateUtil;??????
+
 import java.util.stream.Collectors;
 
 public class DarkSkyHomePage extends BasePage {
@@ -86,9 +86,9 @@ public class DarkSkyHomePage extends BasePage {
         return getTextFromElement(highestTempToday);
 
     }
-    public List<String>getHours(){
-        return getValue(timeLineHours);
-    }
+//    public List<String>getHours(){
+//        return getValue(timeLineHours);
+//    }
 
 //    Scenario: Verify individual day temp timeline
 //    Given I am on Darksky Home Page
